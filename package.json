@@ -30,7 +30,8 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "build": "NODE_ENV=production babel src -d dist --ignore test.js",
-    "preversion": "npm run build"
+    "preversion": "npm run build",
+    "prepare": "npm run build"
   },
   "jest": {
     "setupFiles": [
